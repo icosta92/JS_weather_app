@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang=it dir="ltr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Meteo</title>
+  </head>
+  <body>
+    <header>
+
+      <!-- search menu -->
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <h1 class="mx-auto" style="font-family: 'Yellowtail'">Il Bel Meteo</h1>
+          <div class="d-flex custom-field">
+            <input id='search' class="form-control me-2 search" type="search" placeholder="Città" aria-label="Cerca">
+            <button class="btn btn-outline-success submit" type="submit"><img src="assets/img/geo-alt-fill.svg" alt="" width="20" height="30" title="Geo"></button>
+          </div>
+        </div>
+      </nav>
+      <!-- search menu ends -->
+
+    </header>
+
+    <!--weather card-->
+    <section class="card card-weather">
+      <div class="card-body">
+        <div class="weather-date-location">
+          <h2 id="day0"></h2>
+          <h4 class="text-gray"><span id="weather_date"></span> <span id="weather_location"></span></<h4>
+        </div>
+        <div class="weather-data d-flex">
+          <div class="mr-auto">
+            <div class="">
+              <h4 class="display-3"><span id="weather_temperature"></span><img id="icon_day0" src=""></h4>
+            </div>
+            <h5><span id="weather_pression"></span></h5>
+            <h5><span id="weather_humidity"></span></h5>
+            <h5><span id="weather_cloudy"></span></h5>
+            <h5><span id="weather_description"></span></h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--weather card ends-->
+
+    <!-- weather forecast grid -->
+    <section class="container forecast">
+      <div class="d-flex flex-wrap row text-center weakly-weather-item">
+        <div class="col-md-3 p-3 weakly-weather-item ">
+          <p id="day1" class="mb-0"></p>
+          <img id="icon_day1" src="">
+          <p id="temp_day1" class="mb-0"></p>
+        </div>
+        <div class="col-md-3 p-3 weakly-weather-item">
+          <p id="day2" class="mb-0"></p>
+          <img id="icon_day2" src="">
+          <p id="temp_day2" class="mb-0"></p>
+        </div>
+        <div class="col-md-3 p-3 weakly-weather-item">
+          <p id="day3" class="mb-0 day3"></p>
+          <img id="icon_day3" src="">
+          <p id="temp_day3" class="mb-0"></p>
+        </div>
+        <div class="col-md-3 p-3 weakly-weather-item">
+          <p id="day4" class="mb-0 day4"></p>
+          <img id="icon_day4" src="">
+          <p id="temp_day4" class="mb-0"></p>
+        </div>
+      </div>
+    </section>
+    <!-- weather forecast grid ends -->
+
+    <footer class="bg-light text-center text-lg-start fixed-bottom">
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        Copyright: Matteo Costagli© <span id="copyright"></span>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
